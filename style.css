@@ -95,8 +95,6 @@ body
 {
     font-size: 1.1rem;
     text-align: center;
-    border-radius: 10px;
-    border: none;
     padding: 0.7rem 1rem;
     border-radius: 20px;
     outline: none;
@@ -104,6 +102,7 @@ body
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255,255,255,0.15);
     color: #222;
+    
 }
 #search-panel::placeholder
 {
