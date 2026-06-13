@@ -24,7 +24,7 @@ day.textContent=date.toLocaleDateString('en-US', {
     day: 'numeric'
 });
 box.style.visibility = 'hidden';
-
+welcome.style.display='visible'
 async function getWeather(city)
 {
     box.style.visibility = 'visible';
