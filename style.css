@@ -41,6 +41,7 @@ body
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     position: relative;
     overflow: hidden;
+    display: none;
 }
 
 #main::before
@@ -69,7 +70,7 @@ body
    display: flex;
    justify-content: space-between;
    align-items: center;
-   display: none;
+   
    
    
 
@@ -284,7 +285,7 @@ body
     display:flex;
     justify-content:space-around;
     align-items:center;
-    display: none;
+    
     margin:1rem;
     padding:1rem;
 
