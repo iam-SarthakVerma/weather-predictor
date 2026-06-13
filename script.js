@@ -23,12 +23,13 @@ day.textContent=date.toLocaleDateString('en-US', {
     month: 'long',
     day: 'numeric'
 });
-box.style.visibility = 'hidden';
-welcome.style.display='visible'
+
+
 async function getWeather(city)
 {
-    box.style.visibility = 'visible';
+    
     welcome.style.display='none'
+    
     try
         {
             temperature.textContent = "Loading...";
@@ -54,7 +55,10 @@ async function getWeather(city)
             speed.textContent=`${((data.wind.speed)*3.6).toFixed(1)}Km/h`
             percentage.textContent=`${data.main.humidity}%`
 
-            
+
+            welcome.style.display='none'
+            document.getElementById('box-container').style.display='block'
+            document.getElementById('sun-info').style.display='block'
             
             if(data.weather[0].icon.endsWith('d'))
             {
