@@ -57,8 +57,7 @@ async function getWeather(city)
 
 
             welcome.style.display='none'
-            document.getElementById('box-container').style.display='block'
-            document.getElementById('sun-info').style.display='block'
+            document.getElementById('main').style.display='flex';
             
             if(data.weather[0].icon.endsWith('d'))
             {
