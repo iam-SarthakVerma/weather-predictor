@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./icons/clear-icon.png">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <div id="location-search">
+                <div id="search-location">
+                    <input type="search" id="search-panel" placeholder="Search location" list="city-list">
+                    <datalist id="city-list"></datalist>
+                </div>
+                <div id="place-name">
+                    <span></span>
+                </div>
+                <div id="date">
+                    <span>--/--/--</span>
+                </div>
+            </div>
+        </header>
+        <section id="main-box">
+            <div id="box-container">
+                <div id="leftpart-main-box">
+                    <div id="leftpart-main-box-upper-part">
+                        <span id="temperature">0</span>
+                        <div id="icon_weather_desc">
+                            <span id="icon-weather"></span><span id="weather"></span>
+                        </div>
+                    </div>
+                    <div id="leftpart-main-box-lower-part">
+                        <div id="leftpart-main-box-lower-part-left-side">
+                            <span id="wind">Wind</span>
+                            <span id="speed">0</span>
+                        </div>
+                        <div id="leftpart-main-box-lower-part-center-side">
+                            <span id="humidity">Humidity</span>
+                            <span id="percentage">0</span>
+                        </div>
+                        <div id="leftpart-main-box-lower-part-right-side">
+                            <span id="rain-probability">Rain%</span>
+                            <span id="rain-percentage">0%</span>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div id="centrepart-main-box" class="default">
+                    <div id="welcome-message">
+                        <h1>Welcome to Weather predictor</h1>
+                       <p>🌦️ Search any city to get real-time weather updates</p> 
+                    </div>
+                </div>
+                
+                <div id="rightpart-main-box">
+                    <div id="day-predictions">
+                        <div id="weather-icon">
+
+                        </div>
+                        <div id="days-name">
+                            
+                        </div>
+    
+                        <div id="temperature-on-day">
+                        
+                        </div>
+                    </div>
+                    <div id="rightpart-main-box-lower-part">
+                        <div id="rightpart-main-box-lower-part-left-side">
+                            <span id="min-temp">Min. Temp.</span>
+                            <span id="min-temp-numeric">0</span>
+                        </div>
+                        <div id="rightpart-main-box-lower-part-right-side">
+                            <span id="max-temp">Max. Temp.</span>
+                            <span id="max-temp-numeric">0</span>
+                        </div>
+                        <div id="rightpart-main-box-lower-part-rightmost-side">
+                            <span id="real-feel">Real feel </span>
+                            <span id="real-feel-numeric">0</span>
+                        </div>
+                    </div>    
+                </div>
+                
+                
+            </div>
+        </section>
+        <div id="sun-info">
+            <div>
+                <span>🌅 Sunrise</span>
+                <span id="sunrise-time">:</span>
+            </div>
+
+            <div>
+                <span>🌇 Sunset</span>
+                <span id="sunset-time">:</span>
+            </div>
+        </div>
+    <div id="hourly-container"></div>
+<script src="script.js"></script>
+</body>
+</html>
