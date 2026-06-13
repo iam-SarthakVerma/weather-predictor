@@ -3,6 +3,7 @@ const Api_key= '620598e9c40226e9b565a8339bb64af2';
 const main_div=document.getElementById('main')
 const search=document.getElementById('search-panel')
 const welcome=document.getElementById('welcome-message')
+const boxContainer = document.getElementById('box-container');
 const date=new Date()
 let day=document.getElementById('date')
 let temperature=document.getElementById('temperature')
@@ -16,7 +17,7 @@ let speed=document.getElementById('speed')
 let percentage=document.getElementById('percentage')
 let icon=document.getElementById('icon-weather')
 let place=document.getElementById('place-name')
-
+boxContainer.style.visibility = 'hidden';
 day.textContent=date.toLocaleDateString('en-US', {
     weekday: 'long',
     month: 'long',
