@@ -3,6 +3,7 @@ const Api_key= '620598e9c40226e9b565a8339bb64af2';
 const main_div=document.getElementById('main')
 const search=document.getElementById('search-panel')
 const welcome=document.getElementById('welcome-message')
+const box=document.getElementById('box-container')
 const date=new Date()
 let day=document.getElementById('date')
 let temperature=document.getElementById('temperature')
@@ -22,9 +23,11 @@ day.textContent=date.toLocaleDateString('en-US', {
     month: 'long',
     day: 'numeric'
 });
+box.style.visibility = 'hidden';
 
 async function getWeather(city)
 {
+    box.style.visibility = 'visible';
     welcome.style.display='none'
     try
         {
