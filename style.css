@@ -102,6 +102,7 @@ body
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255,255,255,0.15);
     color: #222;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
 }
 #search-panel::placeholder
