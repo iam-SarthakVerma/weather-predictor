@@ -28,7 +28,7 @@ day.textContent=date.toLocaleDateString('en-US', {
 async function getWeather(city)
 {
     
-    welcome.style.display='none'
+    
     
     try
         {
